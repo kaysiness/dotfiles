@@ -1,0 +1,30 @@
+#alias sudo='sudo '
+#alias ed='${EDITOR}'
+#alias se='sudoedit'
+alias lg='exa --git --long'
+alias ll='exa --tree --level=2 --long --time-style=iso'
+alias la='exa --tree --level=2 --long --time-style=iso --all'
+alias rm='rm -i'
+alias cls='clear'
+alias df='duf'
+alias dig='dog A AAAA'
+alias nslookup='dig'
+alias cpr='rsync -avP'
+alias mvr='rsync -avP --remove-source-files'
+alias netstat='ss -aluntp'
+alias tracert='mtr'
+alias waifu4x='realesrgan-ncnn-vulkan -n realesrgan-x4plus-anime'
+#alias yt-dlp='yt-dlp --proxy=${HTTPS_PROXY} --cookies-from-browser firefox'
+alias yt-dlp='yt-dlp --proxy=${HTTPS_PROXY} --cookies-from-browser firefox:/home/kaysiness/.mozilla/firefox/kaysiness.main/'
+alias curl='curl --proxy ${HTTPS_PROXY}'
+alias gallery-dl='gallery-dl --proxy ${HTTPS_PROXY}'
+
+#alias usb2mpv='mpv av://v4l2:/dev/video0 --demuxer-lavf-o=video_size=1920x1080,framerate=60,input_format=mjpeg --untimed --audio-file=av://pulse://alsa_input.usb-MACROSILICON_2109-02.analog-stereo'
+#alias usb2vlc='vlc v4l2://:input-slave=alsa://:v4l-vdev="/dev/video0"'
+
+# CloudflareST
+#alias cloudflarespeedtest='cloudflarespeedtest -f "/usr/share/cloudflarespeedtest/ipv6.txt" -o ""'
+alias CFST='cfst() { cloudflarespeedtest -f "/usr/share/cloudflarespeedtest/$1.txt" -o "/tmp/CFST_$1.txt" }; cfst'
+
+# Gallery-dl alias
+alias yande.re='gallery-dl -f "/O" --filter "extension==png or extension==jpg"'
