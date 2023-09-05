@@ -14,7 +14,11 @@ alias mvr='rsync -avP --remove-source-files'
 alias netstat='ss -aluntp'
 alias tracert='mtr'
 #alias waifu4x='realesrgan-ncnn-vulkan -n realesrgan-x4plus-anime'
+
+# cURL
 alias curl='curl --proxy ${HTTPS_PROXY}'
+# usage: conntest https://example.com | conntest --proxy socks5://ip:port http://example.com
+alias conntest='/usr/bin/curl -w "连接耗时: %{time_connect}s\n传输耗时: %{time_starttransfer}s\n总共耗时: %{time_total}s\n'
 
 # yt-dlp ※参数配置已修改存放在~/.config/yt-dlp/config
 #alias yt-dlp='yt-dlp --proxy=${HTTPS_PROXY}'
