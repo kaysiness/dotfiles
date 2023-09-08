@@ -1,9 +1,9 @@
 #alias sudo='sudo '
 alias ed='chezmoi edit'
 #alias se='sudoedit'
-alias lg='exa --git --long'
-alias ll='exa --tree --level=2 --group --long --time-style=iso'
-alias la='exa --tree --level=2 --group --long --time-style=iso --all'
+alias lg='eza --git --long'
+alias ll='eza --tree --level=2 --group --long --time-style=iso'
+alias la='eza --tree --level=2 --group --long --time-style=iso --all'
 alias rm='rm -i'
 alias cls='clear'
 alias df='duf'
@@ -18,7 +18,7 @@ alias tracert='mtr'
 # cURL
 alias curl='curl --proxy ${HTTPS_PROXY}'
 # usage: conntest https://example.com | conntest --proxy socks5://ip:port http://example.com
-alias conntest='/usr/bin/curl -w "连接耗时: %{time_connect}s\n传输耗时: %{time_starttransfer}s\n总共耗时: %{time_total}s\n'
+alias conntest='/usr/bin/curl -w "\n连接耗时: %{time_connect}s\n传输耗时: %{time_starttransfer}s\n总共耗时: %{time_total}s\n"'
 
 # yt-dlp ※参数配置已修改存放在~/.config/yt-dlp/config
 #alias yt-dlp='yt-dlp --proxy=${HTTPS_PROXY}'
