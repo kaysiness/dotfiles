@@ -29,8 +29,12 @@ HISTFILE=~/.zhistory                                            # 歷史記錄�
 HISTSIZE=5000                                                   # 歷史記錄條目數量
 SAVEHIST=500                                                    # 註銷後保存的歷史記錄數量
 setopt HIST_IGNORE_DUPS                                         # 相同的記錄只保留一個
+setopt HIST_IGNORE_ALL_DUPS                                     # 相同的記錄只保留一個
 setopt EXTENDED_HISTORY                                         # 在歷史記錄裡添加時間戳
 setopt HIST_IGNORE_SPACE                                        # 命令前添加空格則不記錄到歷史文件裡
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
 
 setopt AUTO_PUSHD                                               # 啟用cd命令歷史記錄，cd -[TAB]
 setopt PUSHD_IGNORE_DUPS                                        # 相同的cd命令記錄只保留一個
