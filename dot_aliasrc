@@ -27,9 +27,8 @@ alias conntest='/usr/bin/curl -w "\n连接耗时: %{time_connect}s\n传输耗时
 #alias yt-dlp='yt-dlp --proxy=${HTTPS_PROXY}'
 
 # CloudflareST
-#alias cloudflarespeedtest='cloudflarespeedtest -f "/usr/share/cloudflarespeedtest/ipv6.txt" -o ""'
-alias CFST='cfst() { cloudflarespeedtest -f "/usr/share/cloudflarespeedtest/$1.txt" -o "/tmp/CFST_$1.txt" }; cfst'
+#alias CFST='cfst() { cloudflarespeedtest -f "/usr/share/cloudflarespeedtest/$1.txt" -o "/tmp/CFST_$1.txt" }; cfst'
 
 # Gallery-dl
 alias gallery-dl='gallery-dl --proxy ${HTTPS_PROXY}'
-alias yande.re='gallery-dl -f "/O" --filter "extension==png or extension==jpg"'
+alias yande.re='gallery-dl -f "/O"'
