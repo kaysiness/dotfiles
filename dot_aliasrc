@@ -9,11 +9,14 @@ alias cls='clear'
 alias df='duf'
 alias dig='dog A AAAA'
 alias nslookup='dig'
-alias cpr='rsync -avP'
-alias mvr='rsync -avP --remove-source-files'
 alias netstat='ss -aluntp'
 alias tracert='mtr'
 #alias waifu4x='realesrgan-ncnn-vulkan -n realesrgan-x4plus-anime'
+
+# rsync
+alias rscp='rsync -avP'
+alias rsmv='rsync -avP --remove-source-files'
+alias rscpp='rsync -avP --no-perms --no-owner --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r'
 
 # cURL
 alias curl='curl --proxy ${HTTPS_PROXY}'
